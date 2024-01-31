@@ -43728,3 +43728,45 @@ body.compensate-for-scrollbar {
     display: none;
   }
 }
+
+.slider--coach .flickity-button {
+  background: transparent;
+}
+.slider--coach .flickity-button svg * {
+  fill: white;
+}
+.slider--coach .flickity-button.flickity-prev-next-button.previous {
+  left: 0;
+}
+.slider--coach .flickity-button.flickity-prev-next-button.next {
+  right: 0;
+}
+@media (min-width: 992px) {
+  .slider--coach .flickity-button.flickity-prev-next-button.previous {
+    left: -45px;
+  }
+  .slider--coach .flickity-button.flickity-prev-next-button.next {
+    right: -45px;
+  }
+}
+
+.slider--tickets .flickity-button {
+  background: transparent;
+}
+.slider--tickets .flickity-button svg * {
+  fill: #090853;
+}
+.slider--tickets .flickity-button.flickity-prev-next-button.previous {
+  left: 0;
+}
+.slider--tickets .flickity-button.flickity-prev-next-button.next {
+  right: 0;
+}
+@media (min-width: 992px) {
+  .slider--tickets .flickity-button.flickity-prev-next-button.previous {
+    left: -45px;
+  }
+  .slider--tickets .flickity-button.flickity-prev-next-button.next {
+    right: -45px;
+  }
+}
