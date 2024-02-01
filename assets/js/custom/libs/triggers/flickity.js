@@ -3,9 +3,9 @@ $(window).on('load', function() {
 		cellAlign: 'center',
 		contain: true,
 		freeScroll: false,
-		wrapAround: true,
+		wrapAround: false,
 		pageDots: false,
-		autoPlay: true,
+		autoPlay: false,
 		prevNextButtons: true,
         arrowShape: { 
 			x0: 15,
@@ -17,12 +17,12 @@ $(window).on('load', function() {
 	
 	
 	$('.slider--tickets').flickity({
-		cellAlign: 'center',
+		cellAlign: 'left',
 		contain: true,
 		freeScroll: false,
-		wrapAround: true,
+		wrapAround: false,
 		pageDots: false,
-		autoPlay: true,
+		autoPlay: false,
 		prevNextButtons: true,
         arrowShape: { 
 			x0: 15,
@@ -36,7 +36,7 @@ $(window).on('load', function() {
 	// Samples
 	
 	$('.flickity--slider').flickity({
-		cellAlign: 'center',
+		cellAlign: 'left',
 		contain: true,
 		freeScroll: false,
 		wrapAround: true,
