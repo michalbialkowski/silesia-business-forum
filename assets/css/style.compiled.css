@@ -4271,26 +4271,30 @@ progress {
   }
 }
 .form-label {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: #090853;
 }
 
 .col-form-label {
-  padding-top: calc(0.375rem + var(--bs-border-width));
-  padding-bottom: calc(0.375rem + var(--bs-border-width));
+  padding-top: calc(0.375rem + 2px);
+  padding-bottom: calc(0.375rem + 2px);
   margin-bottom: 0;
   font-size: inherit;
+  font-weight: 600;
   line-height: 1.5;
+  color: #090853;
 }
 
 .col-form-label-lg {
-  padding-top: calc(0.5rem + var(--bs-border-width));
-  padding-bottom: calc(0.5rem + var(--bs-border-width));
+  padding-top: calc(0.5rem + 2px);
+  padding-bottom: calc(0.5rem + 2px);
   font-size: 1.25rem;
 }
 
 .col-form-label-sm {
-  padding-top: calc(0.25rem + var(--bs-border-width));
-  padding-bottom: calc(0.25rem + var(--bs-border-width));
+  padding-top: calc(0.25rem + 2px);
+  padding-bottom: calc(0.25rem + 2px);
   font-size: 0.875rem;
 }
 
@@ -4311,7 +4315,7 @@ progress {
   appearance: none;
   background-color: var(--bs-body-bg);
   background-clip: padding-box;
-  border: var(--bs-border-width) solid var(--bs-border-color);
+  border: 2px solid #090853;
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -4343,7 +4347,7 @@ progress {
   padding: 0;
 }
 .form-control::placeholder {
-  color: var(--bs-secondary-color);
+  color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 .form-control:disabled {
@@ -4360,7 +4364,7 @@ progress {
   border-color: inherit;
   border-style: solid;
   border-width: 0;
-  border-inline-end-width: var(--bs-border-width);
+  border-inline-end-width: 2px;
   border-radius: 0;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -4382,7 +4386,7 @@ progress {
   color: var(--bs-body-color);
   background-color: transparent;
   border: solid transparent;
-  border-width: var(--bs-border-width) 0;
+  border-width: 2px 0;
 }
 .form-control-plaintext:focus {
   outline: 0;
@@ -4393,7 +4397,7 @@ progress {
 }
 
 .form-control-sm {
-  min-height: calc(1.5em + 0.5rem + calc(var(--bs-border-width) * 2));
+  min-height: calc(1.5em + 0.5rem + calc(2px * 2));
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -4404,7 +4408,7 @@ progress {
 }
 
 .form-control-lg {
-  min-height: calc(1.5em + 1rem + calc(var(--bs-border-width) * 2));
+  min-height: calc(1.5em + 1rem + calc(2px * 2));
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
 }
@@ -4415,18 +4419,18 @@ progress {
 }
 
 textarea.form-control {
-  min-height: calc(1.5em + 0.75rem + calc(var(--bs-border-width) * 2));
+  min-height: calc(1.5em + 0.75rem + calc(2px * 2));
 }
 textarea.form-control-sm {
-  min-height: calc(1.5em + 0.5rem + calc(var(--bs-border-width) * 2));
+  min-height: calc(1.5em + 0.5rem + calc(2px * 2));
 }
 textarea.form-control-lg {
-  min-height: calc(1.5em + 1rem + calc(var(--bs-border-width) * 2));
+  min-height: calc(1.5em + 1rem + calc(2px * 2));
 }
 
 .form-control-color {
   width: 3rem;
-  height: calc(1.5em + 0.75rem + calc(var(--bs-border-width) * 2));
+  height: calc(1.5em + 0.75rem + calc(2px * 2));
   padding: 0.375rem;
 }
 .form-control-color:not(:disabled):not([readonly]) {
@@ -4439,10 +4443,10 @@ textarea.form-control-lg {
   border: 0 !important;
 }
 .form-control-color.form-control-sm {
-  height: calc(1.5em + 0.5rem + calc(var(--bs-border-width) * 2));
+  height: calc(1.5em + 0.5rem + calc(2px * 2));
 }
 .form-control-color.form-control-lg {
-  height: calc(1.5em + 1rem + calc(var(--bs-border-width) * 2));
+  height: calc(1.5em + 1rem + calc(2px * 2));
 }
 
 .form-select {
@@ -4460,7 +4464,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
-  border: var(--bs-border-width) solid var(--bs-border-color);
+  border: 2px solid #090853;
   border-radius: 0;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -4539,7 +4543,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: var(--bs-border-width) solid var(--bs-border-color);
+  border: 2px solid #090853;
   print-color-adjust: exact;
 }
 .form-check-input[type=radio] {
@@ -4620,7 +4624,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check:disabled + .btn {
+.btn-check[disabled] + .btn, .form-check-btn .btn-check[disabled] + label, .btn-check:disabled + .btn, .form-check-btn .btn-check:disabled + label {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -4714,8 +4718,8 @@ textarea.form-control-lg {
 .form-floating > .form-control,
 .form-floating > .form-control-plaintext,
 .form-floating > .form-select {
-  height: calc(3.5rem + calc(var(--bs-border-width) * 2));
-  min-height: calc(3.5rem + calc(var(--bs-border-width) * 2));
+  height: calc(3.5rem + calc(2px * 2));
+  min-height: calc(3.5rem + calc(2px * 2));
   line-height: 1.25;
 }
 .form-floating > label {
@@ -4730,7 +4734,7 @@ textarea.form-control-lg {
   text-overflow: ellipsis;
   white-space: nowrap;
   pointer-events: none;
-  border: var(--bs-border-width) solid transparent;
+  border: 2px solid transparent;
   transform-origin: 0 0;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
@@ -4785,7 +4789,7 @@ textarea.form-control-lg {
   transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
 .form-floating > .form-control-plaintext ~ label {
-  border-width: var(--bs-border-width) 0;
+  border-width: 2px 0;
 }
 .form-floating > :disabled ~ label,
 .form-floating > .form-control:disabled ~ label {
@@ -4816,11 +4820,11 @@ textarea.form-control-lg {
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn {
+.input-group .btn, .input-group .form-check-btn label, .form-check-btn .input-group label {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus {
+.input-group .btn:focus, .input-group .form-check-btn label:focus, .form-check-btn .input-group label:focus {
   z-index: 5;
 }
 
@@ -4835,13 +4839,14 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   background-color: var(--bs-tertiary-bg);
-  border: var(--bs-border-width) solid var(--bs-border-color);
+  border: 2px solid #090853;
 }
 
 .input-group-lg > .form-control,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
-.input-group-lg > .btn {
+.input-group-lg > .btn,
+.form-check-btn .input-group-lg > label {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
 }
@@ -4849,7 +4854,8 @@ textarea.form-control-lg {
 .input-group-sm > .form-control,
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
-.input-group-sm > .btn {
+.input-group-sm > .btn,
+.form-check-btn .input-group-sm > label {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
 }
@@ -4860,7 +4866,7 @@ textarea.form-control-lg {
 }
 
 .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-  margin-left: calc(var(--bs-border-width) * -1);
+  margin-left: calc(2px * -1);
 }
 .valid-feedback {
   display: none;
@@ -5040,7 +5046,7 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
-.btn {
+.btn, .form-check-btn label {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
@@ -5049,7 +5055,7 @@ textarea.form-control-lg {
   --bs-btn-line-height: 1.5;
   --bs-btn-color: var(--bs-body-color);
   --bs-btn-bg: transparent;
-  --bs-btn-border-width: var(--bs-border-width);
+  --bs-btn-border-width: 2px;
   --bs-btn-border-color: transparent;
   --bs-btn-border-radius: var(--bs-border-radius);
   --bs-btn-hover-border-color: transparent;
@@ -5073,41 +5079,41 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn {
+  .btn, .form-check-btn label {
     transition: none;
   }
 }
-.btn:hover {
+.btn:hover, .form-check-btn label:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check + .btn:hover {
+.btn-check + .btn:hover, .form-check-btn .btn-check + label:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-.btn:focus-visible {
+.btn:focus-visible, .form-check-btn label:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn {
+.btn-check:focus-visible + .btn, .form-check-btn .btn-check:focus-visible + label {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+.btn-check:checked + .btn, .form-check-btn .btn-check:checked + label, :not(.btn-check) + .btn:active, .form-check-btn :not(.btn-check) + label:active, .btn:first-child:active, .form-check-btn label:first-child:active, .btn.active, .form-check-btn label.active, .btn.show, .form-check-btn label.show {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
+.btn-check:checked + .btn:focus-visible, .form-check-btn .btn-check:checked + label:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .form-check-btn :not(.btn-check) + label:active:focus-visible, .btn:first-child:active:focus-visible, .form-check-btn label:first-child:active:focus-visible, .btn.active:focus-visible, .form-check-btn label.active:focus-visible, .btn.show:focus-visible, .form-check-btn label.show:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .btn.disabled, fieldset:disabled .btn {
+.btn:disabled, .form-check-btn label:disabled, .btn.disabled, .form-check-btn label.disabled, fieldset:disabled .btn, fieldset:disabled .form-check-btn label, .form-check-btn fieldset:disabled label {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -5336,7 +5342,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #F5FA6F;
 }
 
-.btn-outline-primary {
+.btn-outline-primary, .form-check-btn label {
   --bs-btn-color: #090853;
   --bs-btn-border-color: #090853;
   --bs-btn-hover-color: #fff;
@@ -5579,14 +5585,14 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .btn-group-lg > .btn {
+.btn-lg, .btn-group-lg > .btn, .form-check-btn .btn-group-lg > label {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
   --bs-btn-border-radius: var(--bs-border-radius-lg);
 }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm, .btn-group-sm > .btn, .form-check-btn .btn-group-sm > label {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
@@ -5983,23 +5989,35 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn,
-.btn-group-vertical > .btn {
+.btn-group > .btn, .form-check-btn .btn-group > label,
+.btn-group-vertical > .btn,
+.form-check-btn .btn-group-vertical > label {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn,
+.btn-group > .btn-check:checked + .btn, .form-check-btn .btn-group > .btn-check:checked + label,
 .btn-group > .btn-check:focus + .btn,
+.form-check-btn .btn-group > .btn-check:focus + label,
 .btn-group > .btn:hover,
+.form-check-btn .btn-group > label:hover,
 .btn-group > .btn:focus,
+.form-check-btn .btn-group > label:focus,
 .btn-group > .btn:active,
+.form-check-btn .btn-group > label:active,
 .btn-group > .btn.active,
+.form-check-btn .btn-group > label.active,
 .btn-group-vertical > .btn-check:checked + .btn,
+.form-check-btn .btn-group-vertical > .btn-check:checked + label,
 .btn-group-vertical > .btn-check:focus + .btn,
+.form-check-btn .btn-group-vertical > .btn-check:focus + label,
 .btn-group-vertical > .btn:hover,
+.form-check-btn .btn-group-vertical > label:hover,
 .btn-group-vertical > .btn:focus,
+.form-check-btn .btn-group-vertical > label:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .btn.active {
+.form-check-btn .btn-group-vertical > label:active,
+.btn-group-vertical > .btn.active,
+.form-check-btn .btn-group-vertical > label.active {
   z-index: 1;
 }
 
@@ -6012,9 +6030,9 @@ textarea.form-control-lg {
   width: auto;
 }
 
-.btn-group > :not(.btn-check:first-child) + .btn,
+.btn-group > :not(.btn-check:first-child) + .btn, .form-check-btn .btn-group > :not(.btn-check:first-child) + label,
 .btn-group > .btn-group:not(:first-child) {
-  margin-left: calc(var(--bs-border-width) * -1);
+  margin-left: calc(2px * -1);
 }
 .dropdown-toggle-split {
   padding-right: 0.5625rem;
@@ -6027,12 +6045,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .form-check-btn .btn-group-sm > label + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .form-check-btn .btn-group-lg > label + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -6042,13 +6060,13 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn,
+.btn-group-vertical > .btn, .form-check-btn .btn-group-vertical > label,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child), .form-check-btn .btn-group-vertical > label:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
-  margin-top: calc(var(--bs-border-width) * -1);
+  margin-top: calc(2px * -1);
 }
 .nav {
   --bs-nav-link-padding-x: 1rem;
@@ -7086,7 +7104,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-.btn .badge {
+.btn .badge, .form-check-btn label .badge {
   position: relative;
   top: -1px;
 }
@@ -9251,7 +9269,7 @@ textarea.form-control-lg {
   background-color: currentcolor;
   opacity: 0.5;
 }
-.placeholder.btn::before {
+.placeholder.btn::before, .form-check-btn label.placeholder::before {
   display: inline-block;
   content: "";
 }
@@ -13637,7 +13655,8 @@ textarea.form-control-lg {
   border-radius: var(--bs-border-radius-lg) !important;
 }
 
-.rounded-4 {
+.rounded-4, .btn, .form-check-btn label,
+.form-control {
   border-radius: var(--bs-border-radius-xl) !important;
 }
 
@@ -13663,7 +13682,8 @@ textarea.form-control-lg {
   border-top-right-radius: 0 !important;
 }
 
-.rounded-top-1 {
+.rounded-top-1, .btn, .form-check-btn label,
+.form-control {
   border-top-left-radius: var(--bs-border-radius-sm) !important;
   border-top-right-radius: var(--bs-border-radius-sm) !important;
 }
@@ -13708,7 +13728,8 @@ textarea.form-control-lg {
   border-bottom-right-radius: 0 !important;
 }
 
-.rounded-end-1 {
+.rounded-end-1, .btn, .form-check-btn label,
+.form-control {
   border-top-right-radius: var(--bs-border-radius-sm) !important;
   border-bottom-right-radius: var(--bs-border-radius-sm) !important;
 }
@@ -43799,4 +43820,21 @@ body.compensate-for-scrollbar {
     margin: auto auto;
     padding: 30px 0;
   }
+}
+
+.form-check-btn {
+  position: relative;
+  padding: 0;
+}
+.form-check-btn input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+}
+.form-check-btn label:hover {
+  background: #F5FA6F;
+  color: #090853;
+}
+.form-check-btn input[type=radio]:checked + label {
+  background: #F5FA6F;
+  color: #090853;
 }
