@@ -43831,10 +43831,18 @@ body.compensate-for-scrollbar {
   visibility: hidden;
 }
 .form-check-btn label:hover {
+  border-color: #F5FA6F;
   background: #F5FA6F;
   color: #090853;
+}
+.form-check-btn label:active, .form-check-btn label:focus-visible {
+  background: #F5FA6F !important;
+  color: #090853 !important;
 }
 .form-check-btn input[type=radio]:checked + label {
   background: #F5FA6F;
   color: #090853;
+}
+.form-check-btn input[type=radio]:checked + label:hover, .form-check-btn input[type=radio]:checked + label:active, .form-check-btn input[type=radio]:checked + label:focus-visible {
+  border-color: #090853;
 }
