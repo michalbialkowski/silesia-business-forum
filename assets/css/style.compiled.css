@@ -9431,11 +9431,11 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(26, 30, 33, var(--bs-link-underline-opacity, 1)) !important;
 }
 
-.link-white {
+.link-white, body.home header a {
   color: RGBA(var(--bs-white-rgb), var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(var(--bs-white-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
-.link-white:hover, .link-white:focus {
+.link-white:hover, body.home header a:hover, .link-white:focus, body.home header a:focus {
   color: RGBA(255, 255, 255, var(--bs-link-opacity, 1)) !important;
   text-decoration-color: RGBA(255, 255, 255, var(--bs-link-underline-opacity, 1)) !important;
 }
@@ -9943,7 +9943,7 @@ textarea.form-control-lg {
   position: relative !important;
 }
 
-.position-absolute, .bg--image > .bg--image--background {
+.position-absolute, body.home header, .bg--image > .bg--image--background {
   position: absolute !important;
 }
 
@@ -10208,7 +10208,7 @@ textarea.form-control-lg {
   width: 75% !important;
 }
 
-.w-100, .bg--image > .bg--image--background {
+.w-100, body.home header, .bg--image > .bg--image--background {
   width: 100% !important;
 }
 
@@ -41784,7 +41784,7 @@ body.compensate-for-scrollbar {
   z-index: 100;
 }
 
-.zx--1000 {
+.zx--1000, body.home header {
   z-index: 1000;
 }
 
@@ -41924,7 +41924,7 @@ body.compensate-for-scrollbar {
   z-index: 100;
 }
 
-.zx--1000 {
+.zx--1000, body.home header {
   z-index: 1000;
 }
 
