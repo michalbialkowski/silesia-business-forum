@@ -43771,28 +43771,28 @@ body.compensate-for-scrollbar {
   }
 }
 
-.modal#modal_speaker.show {
+.modal.modal_speaker.show {
   display: flex !important;
 }
-.modal#modal_speaker .modal-body {
+.modal.modal_speaker .modal-body {
   overflow: scroll;
 }
 @media (min-width: 576px) {
-  .modal#modal_speaker .modal-body {
+  .modal.modal_speaker .modal-body {
     overflow: hidden;
   }
-  .modal#modal_speaker .modal-body > .row {
+  .modal.modal_speaker .modal-body > .row {
     height: 100%;
     max-height: 100%;
   }
-  .modal#modal_speaker .modal-body > .row > * + * {
+  .modal.modal_speaker .modal-body > .row > * + * {
     height: 100%;
     max-height: 100%;
     overflow: scroll;
   }
 }
 @media (min-width: 992px) {
-  .modal#modal_speaker .modal-dialog {
+  .modal.modal_speaker .modal-dialog {
     max-width: 800px;
     max-height: 600px;
     margin: auto auto;
