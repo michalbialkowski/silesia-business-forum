@@ -1,4 +1,14 @@
 $(window).on('load', function() {
+	$('.slider--hero').flickity({
+		cellAlign: 'center',
+		contain: true,
+		freeScroll: false,
+		wrapAround: true,
+		pageDots: false,
+		autoPlay: true,
+		prevNextButtons: false
+	});
+	
 	$('.slider--coach').flickity({
 		cellAlign: 'center',
 		contain: true,
